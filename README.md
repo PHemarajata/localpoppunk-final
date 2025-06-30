@@ -31,7 +31,14 @@ This pipeline performs intelligent subsampling and clustering of bacterial genom
 
 2. **Run the pipeline**:
    ```bash
+   # Default mode (with intelligent subsampling)
    nextflow run poppunk_subsample_snp.nf
+   
+   # Use ALL samples for PopPUNK modeling (no subsampling)
+   nextflow run poppunk_subsample_snp.nf -c conf/use_all_samples.config
+   
+   # Or set the parameter directly
+   nextflow run poppunk_subsample_snp.nf --use_all_samples true
    ```
 
 3. **Test with segfault fixes**:
@@ -42,10 +49,41 @@ This pipeline performs intelligent subsampling and clustering of bacterial genom
 ## Key Features
 
 - ✅ **Segmentation fault fixes** - Resolved PopPUNK 2.7.5 stability issues
-- ✅ **Intelligent subsampling** - Handles large datasets (450+ genomes)
+- ✅ **Flexible sampling modes** - Choose between intelligent subsampling or using all samples
+- ✅ **Intelligent subsampling** - Handles large datasets (450+ genomes) efficiently
+- ✅ **Use all samples option** - Include every sample for PopPUNK modeling when needed
 - ✅ **Graceful fallbacks** - Progressive error recovery
 - ✅ **Comprehensive validation** - Input file quality control
 - ✅ **Docker containerization** - Reproducible execution
+
+## Sampling Modes
+
+The pipeline supports two modes for PopPUNK modeling:
+
+### 1. Intelligent Subsampling (Default)
+- **When to use**: Large datasets (>100 genomes) where computational efficiency is important
+- **How it works**: 
+  - Uses MASH to identify similar genomes
+  - Groups genomes into connected components based on similarity
+  - Selects 15% of genomes from each component (min 10, max 100 per component)
+  - Reduces computational load while maintaining population structure
+- **Parameter**: `use_all_samples = false` (default)
+
+### 2. Use All Samples
+- **When to use**: 
+  - Smaller datasets where you want maximum resolution
+  - When every sample is important for your analysis
+  - When you have sufficient computational resources
+- **How it works**: 
+  - Skips MASH distance calculation (saves time)
+  - Uses every validated sample for PopPUNK modeling
+  - Provides maximum clustering resolution
+- **Parameter**: `use_all_samples = true`
+
+### Choosing the Right Mode
+- **Use subsampling** for datasets >200 genomes or when computational resources are limited
+- **Use all samples** for smaller datasets (<100 genomes) or when maximum resolution is needed
+- **Consider your resources**: Using all samples requires more memory and CPU time
 
 ## Configuration
 
@@ -60,10 +98,13 @@ params {
 ### PopPUNK Settings
 ```groovy
 params {
-  // MASH pre-clustering
+  // MASH pre-clustering (only used when subsampling)
   mash_k = 21
   mash_s = 1000
-  mash_thresh = 0.02
+  mash_thresh = 0.001
+  
+  // Sampling mode control
+  use_all_samples = false  // Set to true to use all samples instead of subsampling
   
   // PopPUNK stability fixes
   poppunk_stable = false  // Disabled to prevent segfaults
