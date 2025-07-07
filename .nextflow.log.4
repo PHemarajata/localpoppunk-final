@@ -1,98 +1,90 @@
-Jul-07 16:21:19.357 [main] DEBUG nextflow.cli.Launcher - $> nextflow run poppunk_subsample_snp.nf -profile local --input /home/phemarajata/Downloads/bp-megamix/ --resultsDir /home/phemarajata/Downloads/bp-megamix/all_samples_results --use_all_samples false
-Jul-07 16:21:19.409 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.4
-Jul-07 16:21:19.428 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/phemarajata/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.0,nf-k8s@1.0.0,nf-tower@1.11.3,nf-wave@1.12.1
-Jul-07 16:21:19.443 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
-Jul-07 16:21:19.444 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
-Jul-07 16:21:19.446 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
-Jul-07 16:21:19.462 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
-Jul-07 16:21:19.478 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /home/phemarajata/Downloads/localpoppunk-final/nextflow.config
-Jul-07 16:21:19.479 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/phemarajata/Downloads/localpoppunk-final/nextflow.config
-Jul-07 16:21:19.503 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/phemarajata/.nextflow/secrets/store.json
-Jul-07 16:21:19.506 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@389562d6] - activable => nextflow.secret.LocalSecretsProvider@389562d6
-Jul-07 16:21:19.517 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `local`
-Jul-07 16:21:19.915 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [local]
-Jul-07 16:21:19.945 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
-Jul-07 16:21:19.957 [main] DEBUG nextflow.cli.CmdRun - Launching `poppunk_subsample_snp.nf` [big_linnaeus] DSL2 - revision: 04307fecc0
-Jul-07 16:21:19.959 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
-Jul-07 16:21:19.959 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
-Jul-07 16:21:19.994 [main] DEBUG nextflow.Session - Session UUID: 265fdcce-0860-4f17-925e-02130290765a
-Jul-07 16:21:19.995 [main] DEBUG nextflow.Session - Run name: big_linnaeus
-Jul-07 16:21:19.995 [main] DEBUG nextflow.Session - Executor pool size: 22
-Jul-07 16:21:20.000 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
-Jul-07 16:21:20.004 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=66; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
-Jul-07 16:21:20.026 [main] DEBUG nextflow.cli.CmdRun - 
+Jul-07 10:24:11.487 [main] DEBUG nextflow.cli.Launcher - $> nextflow run poppunk_subsample_snp.nf -profile local --input /home/phemarajata/Downloads/bp-megamix/ --resultsDir /home/phemarajata/Downloads/bp-megamix/all_samples_results --use_all_samples true
+Jul-07 10:24:11.536 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.4
+Jul-07 10:24:11.550 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/phemarajata/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.0,nf-k8s@1.0.0,nf-tower@1.11.3,nf-wave@1.12.1
+Jul-07 10:24:11.564 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jul-07 10:24:11.565 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jul-07 10:24:11.567 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Jul-07 10:24:11.578 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jul-07 10:24:11.593 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /home/phemarajata/Downloads/localpoppunk-final/nextflow.config
+Jul-07 10:24:11.594 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/phemarajata/Downloads/localpoppunk-final/nextflow.config
+Jul-07 10:24:11.612 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/phemarajata/.nextflow/secrets/store.json
+Jul-07 10:24:11.614 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@aed0151] - activable => nextflow.secret.LocalSecretsProvider@aed0151
+Jul-07 10:24:11.622 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `local`
+Jul-07 10:24:11.958 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [local]
+Jul-07 10:24:12.002 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Jul-07 10:24:12.017 [main] DEBUG nextflow.cli.CmdRun - Launching `poppunk_subsample_snp.nf` [stoic_raman] DSL2 - revision: 04307fecc0
+Jul-07 10:24:12.018 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jul-07 10:24:12.019 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Jul-07 10:24:12.055 [main] DEBUG nextflow.Session - Session UUID: 6ff01b49-78af-4d6c-b9d7-614770657a2a
+Jul-07 10:24:12.055 [main] DEBUG nextflow.Session - Run name: stoic_raman
+Jul-07 10:24:12.055 [main] DEBUG nextflow.Session - Executor pool size: 22
+Jul-07 10:24:12.060 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Jul-07 10:24:12.064 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=66; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Jul-07 10:24:12.085 [main] DEBUG nextflow.cli.CmdRun - 
   Version: 25.04.4 build 5950
   Created: 16-06-2025 14:23 UTC (21:23 ICST)
   System: Linux 6.11.0-29-generic
   Runtime: Groovy 4.0.26 on Java HotSpot(TM) 64-Bit Server VM 17.0.12+8-LTS-286
   Encoding: UTF-8 (UTF-8)
-  Process: 3846681@phemarajata-Stealth-16-MercedesAMG-A1VGG [127.0.1.1]
-  CPUs: 22 - Mem: 62.3 GB (1.4 GB) - Swap: 8 GB (7.3 GB)
-Jul-07 16:21:20.050 [main] DEBUG nextflow.Session - Work-dir: /home/phemarajata/Downloads/localpoppunk-final/work [ext2/ext3]
-Jul-07 16:21:20.051 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/phemarajata/Downloads/localpoppunk-final/bin
-Jul-07 16:21:20.063 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
-Jul-07 16:21:20.075 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
-Jul-07 16:21:20.097 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
-Jul-07 16:21:20.113 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
-Jul-07 16:21:20.119 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 23; maxThreads: 1000
-Jul-07 16:21:20.154 [main] DEBUG nextflow.Session - Session start
-Jul-07 16:21:20.707 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
-Jul-07 16:21:20.719 [main] INFO  nextflow.script.BaseScript - ▶ FASTA input directory:  /home/phemarajata/Downloads/bp-megamix/
-Jul-07 16:21:20.721 [main] INFO  nextflow.script.BaseScript - ▶ Results directory:      /home/phemarajata/Downloads/bp-megamix/all_samples_results
-Jul-07 16:21:20.721 [main] INFO  nextflow.script.BaseScript - ▶ Threads / RAM:          12  /  32 GB
-Jul-07 16:21:20.897 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
-Jul-07 16:21:20.897 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Jul-07 16:21:20.902 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
-Jul-07 16:21:20.906 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=22; memory=62.3 GB; capacity=22; pollInterval=100ms; dumpInterval=5m
-Jul-07 16:21:20.907 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
-Jul-07 16:21:20.925 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'VALIDATE_FASTA': maxForks=0; fair=false; array=0
-Jul-07 16:21:20.991 [main] INFO  nextflow.script.BaseScript - 🔄 Using SUBSAMPLING mode - performing MASH-based intelligent subsampling
-Jul-07 16:21:20.995 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
-Jul-07 16:21:20.995 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Jul-07 16:21:20.997 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'MASH_SKETCH': maxForks=0; fair=false; array=0
-Jul-07 16:21:21.003 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
-Jul-07 16:21:21.004 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Jul-07 16:21:21.005 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'MASH_DIST': maxForks=0; fair=false; array=0
-Jul-07 16:21:21.012 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
-Jul-07 16:21:21.012 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Jul-07 16:21:21.013 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'BIN_SUBSAMPLE_OR_ALL': maxForks=0; fair=false; array=0
-Jul-07 16:21:21.022 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
-Jul-07 16:21:21.022 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Jul-07 16:21:21.023 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'POPPUNK_MODEL': maxForks=0; fair=false; array=0
-Jul-07 16:21:21.028 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
-Jul-07 16:21:21.028 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Jul-07 16:21:21.029 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'POPPUNK_ASSIGN': maxForks=0; fair=false; array=0
-Jul-07 16:21:21.035 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
-Jul-07 16:21:21.036 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Jul-07 16:21:21.038 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'SUMMARY_REPORT': maxForks=0; fair=false; array=0
-Jul-07 16:21:21.045 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: BIN_SUBSAMPLE_OR_ALL, MASH_DIST, MASH_SKETCH, SUMMARY_REPORT, POPPUNK_MODEL, POPPUNK_ASSIGN, VALIDATE_FASTA
-Jul-07 16:21:21.049 [main] DEBUG nextflow.Session - Igniting dataflow network (8)
-Jul-07 16:21:21.054 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > VALIDATE_FASTA
-Jul-07 16:21:21.055 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > MASH_SKETCH
-Jul-07 16:21:21.055 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > MASH_DIST
-Jul-07 16:21:21.055 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > BIN_SUBSAMPLE_OR_ALL
-Jul-07 16:21:21.056 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > POPPUNK_MODEL
-Jul-07 16:21:21.056 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > POPPUNK_ASSIGN
-Jul-07 16:21:21.056 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SUMMARY_REPORT
-Jul-07 16:21:21.056 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: /home/phemarajata/Downloads/bp-megamix/; pattern: *.fasta; options: [checkIfExists:true]
-Jul-07 16:21:21.056 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Process: 3389713@phemarajata-Stealth-16-MercedesAMG-A1VGG [127.0.1.1]
+  CPUs: 22 - Mem: 62.3 GB (14.6 GB) - Swap: 8 GB (7.3 GB)
+Jul-07 10:24:12.108 [main] DEBUG nextflow.Session - Work-dir: /home/phemarajata/Downloads/localpoppunk-final/work [ext2/ext3]
+Jul-07 10:24:12.109 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/phemarajata/Downloads/localpoppunk-final/bin
+Jul-07 10:24:12.118 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jul-07 10:24:12.126 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Jul-07 10:24:12.147 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Jul-07 10:24:12.165 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jul-07 10:24:12.173 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 23; maxThreads: 1000
+Jul-07 10:24:12.222 [main] DEBUG nextflow.Session - Session start
+Jul-07 10:24:12.708 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jul-07 10:24:12.714 [main] INFO  nextflow.script.BaseScript - ▶ FASTA input directory:  /home/phemarajata/Downloads/bp-megamix/
+Jul-07 10:24:12.715 [main] INFO  nextflow.script.BaseScript - ▶ Results directory:      /home/phemarajata/Downloads/bp-megamix/all_samples_results
+Jul-07 10:24:12.715 [main] INFO  nextflow.script.BaseScript - ▶ Threads / RAM:          12  /  32 GB
+Jul-07 10:24:12.851 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jul-07 10:24:12.851 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-07 10:24:12.858 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Jul-07 10:24:12.863 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=22; memory=62.3 GB; capacity=22; pollInterval=100ms; dumpInterval=5m
+Jul-07 10:24:12.865 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Jul-07 10:24:12.882 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'VALIDATE_FASTA': maxForks=0; fair=false; array=0
+Jul-07 10:24:12.924 [main] INFO  nextflow.script.BaseScript - 🔄 Using ALL SAMPLES mode - skipping MASH distance calculation
+Jul-07 10:24:12.928 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jul-07 10:24:12.928 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-07 10:24:12.929 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'BIN_SUBSAMPLE_OR_ALL': maxForks=0; fair=false; array=0
+Jul-07 10:24:12.935 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jul-07 10:24:12.935 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-07 10:24:12.935 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'POPPUNK_MODEL': maxForks=0; fair=false; array=0
+Jul-07 10:24:12.940 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jul-07 10:24:12.940 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-07 10:24:12.941 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'POPPUNK_ASSIGN': maxForks=0; fair=false; array=0
+Jul-07 10:24:12.944 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jul-07 10:24:12.944 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-07 10:24:12.945 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'SUMMARY_REPORT': maxForks=0; fair=false; array=0
+Jul-07 10:24:12.948 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: BIN_SUBSAMPLE_OR_ALL, MASH_DIST, MASH_SKETCH, SUMMARY_REPORT, POPPUNK_MODEL, POPPUNK_ASSIGN, VALIDATE_FASTA
+Jul-07 10:24:12.950 [main] DEBUG nextflow.Session - Igniting dataflow network (7)
+Jul-07 10:24:12.953 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > VALIDATE_FASTA
+Jul-07 10:24:12.953 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > BIN_SUBSAMPLE_OR_ALL
+Jul-07 10:24:12.954 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > POPPUNK_MODEL
+Jul-07 10:24:12.954 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > POPPUNK_ASSIGN
+Jul-07 10:24:12.954 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SUMMARY_REPORT
+Jul-07 10:24:12.954 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
   Script_8d59131ca2574cb4: /home/phemarajata/Downloads/localpoppunk-final/poppunk_subsample_snp.nf
-Jul-07 16:21:21.057 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
-Jul-07 16:21:21.057 [main] DEBUG nextflow.Session - Session await
-Jul-07 16:21:21.590 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Jul-07 16:21:21.592 [Task submitter] INFO  nextflow.Session - [dc/5666d9] Submitted process > VALIDATE_FASTA (validate_fasta)
-Jul-07 16:22:44.808 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: VALIDATE_FASTA (validate_fasta); status: COMPLETED; exit: 0; error: -; workDir: /home/phemarajata/Downloads/localpoppunk-final/work/dc/5666d91cf50442557ce8bccbbc567f]
-Jul-07 16:22:44.809 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=66; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
-Jul-07 16:22:44.821 [Actor Thread 19] INFO  nextflow.script.BaseScript - 
+Jul-07 10:24:12.954 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Jul-07 10:24:12.954 [main] DEBUG nextflow.Session - Session await
+Jul-07 10:24:12.955 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: /home/phemarajata/Downloads/bp-megamix/; pattern: *.fasta; options: [checkIfExists:true]
+Jul-07 10:24:13.462 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-07 10:24:13.464 [Task submitter] INFO  nextflow.Session - [97/e2d847] Submitted process > VALIDATE_FASTA (validate_fasta)
+Jul-07 10:25:35.609 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: VALIDATE_FASTA (validate_fasta); status: COMPLETED; exit: 0; error: -; workDir: /home/phemarajata/Downloads/localpoppunk-final/work/97/e2d8476c0f1ecb6f559350ba0bf526]
+Jul-07 10:25:35.609 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=66; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Jul-07 10:25:35.619 [Actor Thread 19] INFO  nextflow.script.BaseScript - 
 ==================================================
-Jul-07 16:22:44.821 [Actor Thread 19] INFO  nextflow.script.BaseScript - 📋 FASTA VALIDATION REPORT
-Jul-07 16:22:44.821 [Actor Thread 19] INFO  nextflow.script.BaseScript - ==================================================
-Jul-07 16:22:44.829 [TaskFinalizer-1] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=66; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
-Jul-07 16:22:44.825 [Actor Thread 19] INFO  nextflow.script.BaseScript - FASTA Validation Report
+Jul-07 10:25:35.619 [Actor Thread 19] INFO  nextflow.script.BaseScript - 📋 FASTA VALIDATION REPORT
+Jul-07 10:25:35.619 [Actor Thread 19] INFO  nextflow.script.BaseScript - ==================================================
+Jul-07 10:25:35.624 [TaskFinalizer-1] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=66; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Jul-07 10:25:35.623 [Actor Thread 19] INFO  nextflow.script.BaseScript - FASTA Validation Report
 ======================
 Total files processed: 3543
-Valid files: 3543
-Invalid files: 0
+Valid files: 3542
+Invalid files: 1
 
 Valid files (with absolute paths):
   ✓ /home/phemarajata/Downloads/bp-megamix/IP-0013.fasta
@@ -2463,7 +2455,6 @@ Valid files (with absolute paths):
   ✓ /home/phemarajata/Downloads/bp-megamix/GCF_900597805_1_Thailand.fasta
   ✓ /home/phemarajata/Downloads/bp-megamix/GCF_028621475_1_missing.fasta
   ✓ /home/phemarajata/Downloads/bp-megamix/GCF_009904185_1_Thailand_Ubon.fasta
-  ✓ /home/phemarajata/Downloads/bp-megamix/GCF_000959285_1_Thailand_Mahidol_University_Siriraj_Hospital_and_Mahidol-Oxford_Research_Unit.fasta
   ✓ /home/phemarajata/Downloads/bp-megamix/GCF_001197235_1_Singapore.fasta
   ✓ /home/phemarajata/Downloads/bp-megamix/IP-0191.fasta
   ✓ /home/phemarajata/Downloads/bp-megamix/GCF_001195065_2_Thailand.fasta
@@ -3639,39 +3630,281 @@ Valid files (with absolute paths):
   ✓ /home/phemarajata/Downloads/bp-megamix/IP-0130.fasta
   ✓ /home/phemarajata/Downloads/bp-megamix/GCA_963560985_1.fasta
 
+Invalid files (excluded from analysis):
+  ✗ GCF_000959285_1_Thailand_Mahidol_University_\(Siriraj_Hospital_and_Mahidol-Oxford_Research_Unit.fasta: File does not exist
 
-Jul-07 16:22:44.831 [Actor Thread 19] INFO  nextflow.script.BaseScript - ==================================================
+Jul-07 10:25:35.630 [Actor Thread 19] INFO  nextflow.script.BaseScript - ==================================================
 
-Jul-07 16:22:45.172 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Jul-07 16:22:45.173 [Task submitter] INFO  nextflow.Session - [57/5c6fba] Submitted process > MASH_SKETCH (mash_sketch)
-Jul-07 16:23:34.609 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: MASH_SKETCH (mash_sketch); status: COMPLETED; exit: 0; error: -; workDir: /home/phemarajata/Downloads/localpoppunk-final/work/57/5c6fbaa9b1f8fb11a542b1edb4d3a7]
-Jul-07 16:23:34.623 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Jul-07 16:23:34.623 [Task submitter] INFO  nextflow.Session - [11/bbda3c] Submitted process > MASH_DIST (mash_dist)
-Jul-07 16:23:57.394 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: MASH_DIST (mash_dist); status: COMPLETED; exit: 0; error: -; workDir: /home/phemarajata/Downloads/localpoppunk-final/work/11/bbda3c468c832aa0a1bd843fef56e1]
-Jul-07 16:23:57.412 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Jul-07 16:23:57.412 [Task submitter] INFO  nextflow.Session - [17/adc49c] Submitted process > BIN_SUBSAMPLE_OR_ALL (bin_subsample_or_all)
-Jul-07 16:24:04.939 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: BIN_SUBSAMPLE_OR_ALL (bin_subsample_or_all); status: COMPLETED; exit: 0; error: -; workDir: /home/phemarajata/Downloads/localpoppunk-final/work/17/adc49c3b23c09363e69c1869e9ca10]
-Jul-07 16:24:05.086 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Jul-07 16:24:05.086 [Task submitter] INFO  nextflow.Session - [dd/e53475] Submitted process > POPPUNK_MODEL (poppunk_model)
-Jul-07 16:25:44.935 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: POPPUNK_MODEL (poppunk_model); status: COMPLETED; exit: 0; error: -; workDir: /home/phemarajata/Downloads/localpoppunk-final/work/dd/e5347513cd85bf27fcee175e45f6ea]
-Jul-07 16:25:45.031 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Jul-07 16:25:45.032 [Task submitter] INFO  nextflow.Session - [15/46a242] Submitted process > POPPUNK_ASSIGN (poppunk_assign)
-Jul-07 16:26:21.096 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
-~> TaskHandler[id: 6; name: POPPUNK_ASSIGN (poppunk_assign); status: RUNNING; exit: -; error: -; workDir: /home/phemarajata/Downloads/localpoppunk-final/work/15/46a2427187bb6af7f50a32b1c21d80]
-Jul-07 16:29:28.980 [SIGINT handler] DEBUG nextflow.Session - Session aborted -- Cause: SIGINT
-Jul-07 16:29:28.987 [SIGINT handler] DEBUG nextflow.Session - The following nodes are still active:
-[process] SUMMARY_REPORT
-  status=ACTIVE
-  port 0: (value) OPEN  ; channel: cluster_csv
-  port 1: (value) bound ; channel: validation_report
-  port 2: (cntrl) -     ; channel: $
+Jul-07 10:25:35.657 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-07 10:25:35.658 [Task submitter] INFO  nextflow.Session - [0f/3c18c8] Submitted process > BIN_SUBSAMPLE_OR_ALL (bin_subsample_or_all)
+Jul-07 10:25:37.943 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: BIN_SUBSAMPLE_OR_ALL (bin_subsample_or_all); status: COMPLETED; exit: 0; error: -; workDir: /home/phemarajata/Downloads/localpoppunk-final/work/0f/3c18c8042224ac2d15083142cc93ff]
+Jul-07 10:25:38.110 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-07 10:25:38.111 [Task submitter] INFO  nextflow.Session - [12/aee7f9] Submitted process > POPPUNK_MODEL (poppunk_model)
+Jul-07 10:27:58.559 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: POPPUNK_MODEL (poppunk_model); status: COMPLETED; exit: 135; error: -; workDir: /home/phemarajata/Downloads/localpoppunk-final/work/12/aee7f9905b2b939b1c74775e58aaa4]
+Jul-07 10:27:58.562 [TaskFinalizer-3] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=POPPUNK_MODEL (poppunk_model); work-dir=/home/phemarajata/Downloads/localpoppunk-final/work/12/aee7f9905b2b939b1c74775e58aaa4
+  error [nextflow.exception.ProcessFailedException]: Process `POPPUNK_MODEL (poppunk_model)` terminated with an error exit status (135)
+Jul-07 10:27:58.575 [TaskFinalizer-3] ERROR nextflow.processor.TaskProcessor - Error executing process > 'POPPUNK_MODEL (poppunk_model)'
 
-Jul-07 16:29:28.990 [main] DEBUG nextflow.Session - Session await > all processes finished
-Jul-07 16:29:28.990 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
-Jul-07 16:29:28.990 [main] DEBUG nextflow.Session - Session await > all barriers passed
-Jul-07 16:29:28.994 [main] WARN  n.processor.TaskPollingMonitor - Killing running tasks (1)
-Jul-07 16:29:28.999 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=5; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=1; succeedDuration=45m 4s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=12; peakMemory=60 GB; ]
-Jul-07 16:29:28.999 [main] DEBUG nextflow.trace.ReportObserver - Workflow completed -- rendering execution report
-Jul-07 16:29:29.304 [main] DEBUG nextflow.trace.TimelineObserver - Workflow completed -- rendering execution timeline
-Jul-07 16:29:29.357 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
-Jul-07 16:29:29.363 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
+Caused by:
+  Process `POPPUNK_MODEL (poppunk_model)` terminated with an error exit status (135)
+
+
+Command executed:
+
+  # Check if subset list is not empty
+  if [ ! -s subset.list ]; then
+      echo "ERROR: Subset list is empty. No valid genomes found for PopPUNK modeling."
+      exit 1
+  fi
+  
+  echo "Building PopPUNK database with $(wc -l < subset.list) genomes..."
+  
+  # Create a new file list with staged filenames (not absolute paths)
+  # Map the sample names from subset.list to the staged FASTA files
+  > staged_files.list
+  while IFS=$'\t' read -r sample_name file_path; do
+      # Find the corresponding staged file
+      basename_file=$(basename "$file_path")
+      if [ -f "$basename_file" ]; then
+          echo -e "$sample_name\t$basename_file" >> staged_files.list
+          echo "Mapped: $sample_name -> $basename_file"
+      else
+          echo "ERROR: Staged file not found: $basename_file"
+          exit 1
+      fi
+  done < subset.list
+  
+  echo "Created staged files list:"
+  cat staged_files.list
+  
+  echo "All files verified. Starting PopPUNK database creation..."
+  
+  poppunk --create-db --r-files staged_files.list \
+      --output poppunk_db --threads 12
+  
+  echo "Database created successfully. Fitting model with PopPUNK 2.7.x features..."
+  
+  # Use optimized PopPUNK 2.7.x features for better cluster separation
+  echo "Fitting PopPUNK model with optimized parameters for better clustering..."
+  poppunk --fit-model bgmm --ref-db poppunk_db \
+      --output poppunk_fit --threads 12 \
+      --reciprocal-only \
+      --count-unique-distances \
+      --max-search-depth 20 \
+      --K 3
+  
+  echo "Model fitting completed. Copying fitted model files to database directory..."
+  
+  # Copy all fitted model files from poppunk_fit to poppunk_db
+  # This ensures the database directory contains both the database and the fitted model
+  if [ -d "poppunk_fit" ]; then
+      echo "Copying fitted model files to poppunk_db directory..."
+  
+      # Copy all files from poppunk_fit to poppunk_db
+      cp poppunk_fit/* poppunk_db/ 2>/dev/null || echo "Some files could not be copied"
+  
+      # The critical step: rename the fitted model file to match what PopPUNK expects
+      if [ -f "poppunk_db/poppunk_fit_fit.pkl" ]; then
+          cp poppunk_db/poppunk_fit_fit.pkl poppunk_db/poppunk_db_fit.pkl
+          echo "✓ Created poppunk_db_fit.pkl from poppunk_fit_fit.pkl"
+      fi
+  
+      # Also copy the npz file with the correct name
+      if [ -f "poppunk_db/poppunk_fit_fit.npz" ]; then
+          cp poppunk_db/poppunk_fit_fit.npz poppunk_db/poppunk_db_fit.npz
+          echo "✓ Created poppunk_db_fit.npz from poppunk_fit_fit.npz"
+      fi
+  
+      # Copy the graph file with the correct name - CRITICAL for poppunk_assign
+      if [ -f "poppunk_db/poppunk_fit_graph.gt" ]; then
+          cp poppunk_db/poppunk_fit_graph.gt poppunk_db/poppunk_db_graph.gt
+          echo "✓ Created poppunk_db_graph.gt from poppunk_fit_graph.gt"
+      fi
+  
+      # Copy the cluster file with the correct name - CRITICAL for poppunk_assign
+      if [ -f "poppunk_db/poppunk_fit_clusters.csv" ]; then
+          cp poppunk_db/poppunk_fit_clusters.csv poppunk_db/poppunk_db_clusters.csv
+          echo "✓ Created poppunk_db_clusters.csv from poppunk_fit_clusters.csv"
+      fi
+  
+      echo "Files in poppunk_db after copying:"
+      ls -la poppunk_db/
+  
+      # Verify the critical model files exist
+      if [ -f "poppunk_db/poppunk_db_fit.pkl" ]; then
+          echo "✓ Found fitted model file: poppunk_db_fit.pkl"
+      else
+          echo "⚠ Model .pkl file not found. Available files:"
+          ls -la poppunk_db/*.pkl 2>/dev/null || echo "No .pkl files found"
+      fi
+  
+      if [ -f "poppunk_db/poppunk_db_graph.gt" ]; then
+          echo "✓ Found graph file: poppunk_db_graph.gt"
+      else
+          echo "⚠ Graph file not found. Available graph files:"
+          ls -la poppunk_db/*.gt 2>/dev/null || echo "No .gt files found"
+      fi
+  
+      if [ -f "poppunk_db/poppunk_db_clusters.csv" ]; then
+          echo "✓ Found cluster file: poppunk_db_clusters.csv"
+      else
+          echo "⚠ Cluster file not found. Available cluster files:"
+          ls -la poppunk_db/*clusters*.csv 2>/dev/null || echo "No cluster CSV files found"
+      fi
+  else
+      echo "ERROR: poppunk_fit directory not found"
+      exit 1
+  fi
+  
+  # Check for different possible output file locations for cluster assignments
+  if [ -f "poppunk_fit/poppunk_fit_clusters.csv" ]; then
+      cp poppunk_fit/poppunk_fit_clusters.csv cluster_model.csv
+      echo "Found poppunk_fit_clusters.csv in poppunk_fit/"
+  elif [ -f "poppunk_fit/cluster_assignments.csv" ]; then
+      cp poppunk_fit/cluster_assignments.csv cluster_model.csv
+      echo "Found cluster_assignments.csv in poppunk_fit/"
+  elif ls poppunk_fit/*_clusters.csv 1> /dev/null 2>&1; then
+      cp poppunk_fit/*_clusters.csv cluster_model.csv
+      echo "Found cluster file in poppunk_fit/"
+  elif ls poppunk_fit/*.csv 1> /dev/null 2>&1; then
+      cp poppunk_fit/*.csv cluster_model.csv
+      echo "Found CSV file in poppunk_fit/"
+  else
+      echo "Available files in poppunk_fit/:"
+      ls -la poppunk_fit/ || echo "poppunk_fit directory not found"
+      echo "Available files in current directory:"
+      ls -la *.csv || echo "No CSV files found"
+      # Create a minimal output file so the pipeline doesn't fail
+      echo "sample,cluster" > cluster_model.csv
+      echo "PopPUNK completed but cluster assignments file not found in expected location"
+  fi
+  
+  echo "PopPUNK model completed successfully!"
+
+Command exit status:
+  135
+
+Command output:
+  GCA_963568145_1	GCA_963568145_1.fasta
+  GCF_009904255_1_Thailand_Ubon	GCF_009904255_1_Thailand_Ubon.fasta
+  ERS012334	ERS012334.fasta
+  GCA_963562935_1	GCA_963562935_1.fasta
+  GCF_001320795_1_Singapore	GCF_001320795_1_Singapore.fasta
+  IP-0077	IP-0077.fasta
+  GCA_963568005_1	GCA_963568005_1.fasta
+  GCF_900594915_1_Thailand	GCF_900594915_1_Thailand.fasta
+  GCA_963565165_1	GCA_963565165_1.fasta
+  GCA_963560865_1	GCA_963560865_1.fasta
+  GCF_001978515_1_Australia_Northern_Territory	GCF_001978515_1_Australia_Northern_Territory.fasta
+  GCA_963571455_1	GCA_963571455_1.fasta
+  GCF_040719295_1_India_New_Delhi_Kotla_market	GCF_040719295_1_India_New_Delhi_Kotla_market.fasta
+  GCA_963570495_1	GCA_963570495_1.fasta
+  GCA_963560455_1	GCA_963560455_1.fasta
+  GCF_900596935_1_Thailand	GCF_900596935_1_Thailand.fasta
+  GCF_900592785_1_Thailand	GCF_900592785_1_Thailand.fasta
+  GCF_900597625_1_Thailand	GCF_900597625_1_Thailand.fasta
+  GCA_963571625_1	GCA_963571625_1.fasta
+  GCF_001981045_1_Thailand	GCF_001981045_1_Thailand.fasta
+  ERS008810	ERS008810.fasta
+  GCF_000756145_1_Thailand_Ubon_Ratchathani	GCF_000756145_1_Thailand_Ubon_Ratchathani.fasta
+  GCA_963561125_1	GCA_963561125_1.fasta
+  GCA_963572935_1	GCA_963572935_1.fasta
+  GCA_963561145_1	GCA_963561145_1.fasta
+  GCF_017653305_1_India	GCF_017653305_1_India.fasta
+  GCA_963565615_1	GCA_963565615_1.fasta
+  GCF_001978455_1_Australia_Northern_Territory	GCF_001978455_1_Australia_Northern_Territory.fasta
+  GCF_019843765_1_Singapore	GCF_019843765_1_Singapore.fasta
+  GCA_963567925_1	GCA_963567925_1.fasta
+  GCA_963571095_1	GCA_963571095_1.fasta
+  GCA_963564645_1	GCA_963564645_1.fasta
+  GCF_900596735_1_Thailand	GCF_900596735_1_Thailand.fasta
+  GCA_963571185_1	GCA_963571185_1.fasta
+  IP-0174	IP-0174.fasta
+  GCF_009904095_1_Thailand_Ubon	GCF_009904095_1_Thailand_Ubon.fasta
+  ERS012377	ERS012377.fasta
+  GCA_963571345_1	GCA_963571345_1.fasta
+  GCF_002900605_1_Malaysia	GCF_002900605_1_Malaysia.fasta
+  GCF_000182585_2_Australia	GCF_000182585_2_Australia.fasta
+  GCF_900593865_1_Thailand	GCF_900593865_1_Thailand.fasta
+  GCF_900597035_1_Thailand	GCF_900597035_1_Thailand.fasta
+  GCF_001212025_1_Thailand	GCF_001212025_1_Thailand.fasta
+  GCF_003420685_1_United_Kingdom_Salisbury	GCF_003420685_1_United_Kingdom_Salisbury.fasta
+  GCF_001327395_1_Thailand	GCF_001327395_1_Thailand.fasta
+  IP-0130	IP-0130.fasta
+  GCA_963560985_1	GCA_963560985_1.fasta
+  All files verified. Starting PopPUNK database creation...
+  Database created successfully. Fitting model with PopPUNK 2.7.x features...
+  Fitting PopPUNK model with optimized parameters for better clustering...
+
+Command error:
+  Progress (CPU): 96.6%
+  Progress (CPU): 96.7%
+  Progress (CPU): 96.8%
+  Progress (CPU): 96.9%
+  Progress (CPU): 97.0%
+  Progress (CPU): 97.1%
+  Progress (CPU): 97.2%
+  Progress (CPU): 97.3%
+  Progress (CPU): 97.4%
+  Progress (CPU): 97.5%
+  Progress (CPU): 97.6%
+  Progress (CPU): 97.7%
+  Progress (CPU): 97.8%
+  Progress (CPU): 97.9%
+  Progress (CPU): 98.0%
+  Progress (CPU): 98.1%
+  Progress (CPU): 98.2%
+  Progress (CPU): 98.3%
+  Progress (CPU): 98.4%
+  Progress (CPU): 98.5%
+  Progress (CPU): 98.6%
+  Progress (CPU): 98.7%
+  Progress (CPU): 98.8%
+  Progress (CPU): 98.9%
+  Progress (CPU): 99.0%
+  Progress (CPU): 99.1%
+  Progress (CPU): 99.2%
+  Progress (CPU): 99.3%
+  Progress (CPU): 99.4%
+  Progress (CPU): 99.5%
+  Progress (CPU): 99.6%
+  Progress (CPU): 99.7%
+  Progress (CPU): 99.8%
+  Progress (CPU): 99.9%
+  Progress (CPU): 100.0%
+  Progress (CPU): 100.0%
+  Progress (CPU): 100.0%
+  
+  Done
+  Database created successfully. Fitting model with PopPUNK 2.7.x features...
+  Fitting PopPUNK model with optimized parameters for better clustering...
+  PopPUNK (POPulation Partitioning Using Nucleotide Kmers)
+  	(with backend: sketchlib v2.1.4
+  	 sketchlib: /opt/conda/envs/poppunk-env/lib/python3.12/site-packages/pp_sketchlib.cpython-312-x86_64-linux-gnu.so)
+  
+  Graph-tools OpenMP parallelisation enabled: with 12 threads
+  Mode: Fitting bgmm model to reference database
+  
+  Assigning distances with BGMM model
+  .command.sh: line 42:  5439 Bus error               (core dumped) poppunk --fit-model bgmm --ref-db poppunk_db --output poppunk_fit --threads 12 --reciprocal-only --count-unique-distances --max-search-depth 20 --K 3
+
+Work dir:
+  /home/phemarajata/Downloads/localpoppunk-final/work/12/aee7f9905b2b939b1c74775e58aaa4
+
+Container:
+  staphb/poppunk:2.7.5
+
+Tip: you can try to figure out what's wrong by changing to the process work dir and showing the script file named `.command.sh`
+Jul-07 10:27:58.577 [TaskFinalizer-3] INFO  nextflow.Session - Execution cancelled -- Finishing pending tasks before exit
+Jul-07 10:27:58.577 [main] DEBUG nextflow.Session - Session await > all processes finished
+Jul-07 10:27:58.595 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Jul-07 10:27:58.595 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Jul-07 10:27:58.597 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
+Jul-07 10:27:58.597 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'PublishDir' shutdown completed (hard=false)
+Jul-07 10:27:58.601 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=2; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=10m 51s; failedDuration=28m 5s; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=12; peakMemory=32 GB; ]
+Jul-07 10:27:58.601 [main] DEBUG nextflow.trace.ReportObserver - Workflow completed -- rendering execution report
+Jul-07 10:27:58.896 [main] DEBUG nextflow.trace.TimelineObserver - Workflow completed -- rendering execution timeline
+Jul-07 10:27:59.008 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Jul-07 10:27:59.012 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Jul-07 10:27:59.013 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
