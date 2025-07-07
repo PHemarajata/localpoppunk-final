@@ -1,0 +1,80 @@
+Jul-07 10:23:06.453 [main] DEBUG nextflow.cli.Launcher - $> nextflow run poppunk_subsample_snp.nf -profile local --input /home/phemarajata/Downloads/bp_bigset/ --resultsDir /home/phemarajata/Downloads/bp_bigset/all_samples_results --use_all_samples true
+Jul-07 10:23:06.501 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.4
+Jul-07 10:23:06.519 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/phemarajata/.nextflow/plugins; core-plugins: nf-amazon@2.15.0,nf-azure@1.16.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.0,nf-k8s@1.0.0,nf-tower@1.11.3,nf-wave@1.12.1
+Jul-07 10:23:06.535 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jul-07 10:23:06.535 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jul-07 10:23:06.537 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Jul-07 10:23:06.544 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jul-07 10:23:06.563 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /home/phemarajata/Downloads/localpoppunk-final/nextflow.config
+Jul-07 10:23:06.565 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/phemarajata/Downloads/localpoppunk-final/nextflow.config
+Jul-07 10:23:06.585 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/phemarajata/.nextflow/secrets/store.json
+Jul-07 10:23:06.588 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@456be73c] - activable => nextflow.secret.LocalSecretsProvider@456be73c
+Jul-07 10:23:06.599 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `local`
+Jul-07 10:23:06.964 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [local]
+Jul-07 10:23:06.985 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Jul-07 10:23:06.998 [main] DEBUG nextflow.cli.CmdRun - Launching `poppunk_subsample_snp.nf` [nice_hypatia] DSL2 - revision: 04307fecc0
+Jul-07 10:23:06.999 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jul-07 10:23:06.999 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Jul-07 10:23:07.038 [main] DEBUG nextflow.Session - Session UUID: 7d16c607-4d40-4177-8cbf-c00080afe526
+Jul-07 10:23:07.038 [main] DEBUG nextflow.Session - Run name: nice_hypatia
+Jul-07 10:23:07.039 [main] DEBUG nextflow.Session - Executor pool size: 22
+Jul-07 10:23:07.046 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Jul-07 10:23:07.051 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=66; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Jul-07 10:23:07.067 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 25.04.4 build 5950
+  Created: 16-06-2025 14:23 UTC (21:23 ICST)
+  System: Linux 6.11.0-29-generic
+  Runtime: Groovy 4.0.26 on Java HotSpot(TM) 64-Bit Server VM 17.0.12+8-LTS-286
+  Encoding: UTF-8 (UTF-8)
+  Process: 3389005@phemarajata-Stealth-16-MercedesAMG-A1VGG [127.0.1.1]
+  CPUs: 22 - Mem: 62.3 GB (14.7 GB) - Swap: 8 GB (7.3 GB)
+Jul-07 10:23:07.092 [main] DEBUG nextflow.Session - Work-dir: /home/phemarajata/Downloads/localpoppunk-final/work [ext2/ext3]
+Jul-07 10:23:07.093 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/phemarajata/Downloads/localpoppunk-final/bin
+Jul-07 10:23:07.101 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jul-07 10:23:07.109 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Jul-07 10:23:07.129 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Jul-07 10:23:07.146 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jul-07 10:23:07.152 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 23; maxThreads: 1000
+Jul-07 10:23:07.197 [main] DEBUG nextflow.Session - Session start
+Jul-07 10:23:07.696 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jul-07 10:23:07.703 [SIGINT handler] DEBUG nextflow.Session - Session aborted -- Cause: SIGINT
+Jul-07 10:23:07.703 [main] INFO  nextflow.script.BaseScript - ▶ FASTA input directory:  /home/phemarajata/Downloads/bp_bigset/
+Jul-07 10:23:07.704 [main] INFO  nextflow.script.BaseScript - ▶ Results directory:      /home/phemarajata/Downloads/bp_bigset/all_samples_results
+Jul-07 10:23:07.704 [main] INFO  nextflow.script.BaseScript - ▶ Threads / RAM:          12  /  32 GB
+Jul-07 10:23:07.791 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jul-07 10:23:07.792 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-07 10:23:07.796 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Jul-07 10:23:07.800 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=22; memory=62.3 GB; capacity=22; pollInterval=100ms; dumpInterval=5m
+Jul-07 10:23:07.802 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Jul-07 10:23:07.803 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Jul-07 10:23:07.824 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'VALIDATE_FASTA': maxForks=0; fair=false; array=0
+Jul-07 10:23:07.864 [main] INFO  nextflow.script.BaseScript - 🔄 Using ALL SAMPLES mode - skipping MASH distance calculation
+Jul-07 10:23:07.868 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jul-07 10:23:07.868 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-07 10:23:07.869 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'BIN_SUBSAMPLE_OR_ALL': maxForks=0; fair=false; array=0
+Jul-07 10:23:07.880 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jul-07 10:23:07.880 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-07 10:23:07.882 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'POPPUNK_MODEL': maxForks=0; fair=false; array=0
+Jul-07 10:23:07.889 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jul-07 10:23:07.889 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-07 10:23:07.889 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'POPPUNK_ASSIGN': maxForks=0; fair=false; array=0
+Jul-07 10:23:07.892 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jul-07 10:23:07.892 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-07 10:23:07.892 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'SUMMARY_REPORT': maxForks=0; fair=false; array=0
+Jul-07 10:23:07.895 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: BIN_SUBSAMPLE_OR_ALL, MASH_DIST, MASH_SKETCH, SUMMARY_REPORT, POPPUNK_MODEL, POPPUNK_ASSIGN, VALIDATE_FASTA
+Jul-07 10:23:07.896 [main] DEBUG nextflow.Session - Igniting dataflow network (7)
+Jul-07 10:23:07.900 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > VALIDATE_FASTA
+Jul-07 10:23:07.901 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > BIN_SUBSAMPLE_OR_ALL
+Jul-07 10:23:07.901 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > POPPUNK_MODEL
+Jul-07 10:23:07.902 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > POPPUNK_ASSIGN
+Jul-07 10:23:07.902 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SUMMARY_REPORT
+Jul-07 10:23:07.902 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_8d59131ca2574cb4: /home/phemarajata/Downloads/localpoppunk-final/poppunk_subsample_snp.nf
+Jul-07 10:23:07.902 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Jul-07 10:23:07.902 [main] DEBUG nextflow.Session - Session await
+Jul-07 10:23:07.902 [main] DEBUG nextflow.Session - Session await > all processes finished
+Jul-07 10:23:07.902 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Jul-07 10:23:07.903 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: /home/phemarajata/Downloads/bp_bigset/; pattern: *.fasta; options: [checkIfExists:true]
+Jul-07 10:23:07.908 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
+Jul-07 10:23:07.909 [main] DEBUG nextflow.trace.ReportObserver - Workflow completed -- rendering execution report
+Jul-07 10:23:08.032 [SIGINT handler] INFO  nextflow.Session - Adieu
